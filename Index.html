@@ -3,198 +3,518 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhiteOx Sourcing | Premium Merchant Exporter India</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>Madhavraj Global Ventures | Exporting Indian Excellence Globally</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // You will get this Public Key when you create a free EmailJS account
+        emailjs.init("2m7lhAg3GcyMQwpzf");
+    })();
+</script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brandDark: '#111827',
-                        brandGold: '#D97706',
-                        brandLightBg: '#F9FAFB'
+                        brandDark: '#0B132B',
+                        brandNav: '#1C2541',
+                        brandGold: '#D4AF37',
+                        brandGoldHover: '#AA8822',
+                        brandLightBg: '#F7F9FC'
                     }
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gold-glow { text-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body class="text-gray-800 bg-white font-sans antialiased">
+<body class="text-gray-800 bg-white font-sans antialiased selection:bg-brandGold/30 flex flex-col min-h-screen">
 
-    <a href="https://wa.me/917777007249?text=Hi,%20I%20am%20interested%20in%20sourcing%20products%20globally." 
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://api.whatsapp.com/send?phone=917566075002&text=Hello%20Madhavraj%20Global%20Ventures,%20I%20am%20interested%20in%20initiating%20a%20commercial%20sourcing%20brief%20with%20your%20firm." 
        target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all z-50 flex items-center justify-center">
+       class="fixed bottom-6 right-6 bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-700 transition-all duration-300 z-50 flex items-center justify-center group"
+       aria-label="Direct WhatsApp API Bridge">
         <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap pl-0 group-hover:pl-2 font-medium text-xs tracking-wider uppercase">WhatsApp Desk</span>
     </a>
 
-    <header class="sticky top-0 bg-white border-b border-gray-100 shadow-sm z-40">
+    <header class="sticky top-0 bg-brandNav border-b border-gray-800/60 shadow-lg z-40 text-white backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="text-2xl font-black tracking-tight text-brandDark">
-                White<span class="text-brandGold">Ox</span> <span class="text-xs uppercase tracking-widest font-bold text-gray-400 block sm:inline">Sourcing</span>
-            </div>
             
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600 uppercase tracking-wider">
-                <a href="#hero" class="hover:text-brandGold transition-colors">Home</a>
+            <!-- <a href="#hero" class="flex items-center space-x-3">
+                <img src="MR_Logo_Transparent.png" alt="Madhavraj Global Ventures Logo" class="h-12 w-12 object-contain rounded-md border border-brandGold/40">
+                <div class="flex flex-col">
+                    <span class="text-lg font-black tracking-widest text-white uppercase">MADHAVRAJ</span>
+                    <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-brandGold -mt-1">GLOBAL VENTURES</span>
+                </div>
+            </a> -->
+
+            <a href="#hero" class="flex items-center space-x-3">
+                <!-- <img src="Logo.png" alt="Madhavraj Logo" class="h-12 w-12 object-contain rounded-md border border-brandGold/40"> -->
+                <img src="MR_Logo_Transparent.png" alt="Madhavraj Global Ventures Logo" class="h-16 w-auto object-contain drop-shadow-lg">
+                <!-- <img src="MR_Logo_White.jpg" alt="Madhavraj Global Ventures Logo" class="h-16 w-auto object-contain" style="mix-blend-mode: multiply;"> -->
+                <div class="flex flex-col">
+                    <span class="text-lg font-black tracking-widest text-white uppercase">MADHAVRAJ</span>
+                    <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-brandGold -mt-1">GLOBAL VENTURES</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-xs font-bold text-gray-300 uppercase tracking-widest">
+                <a href="#hero" class="text-brandGold hover:text-white transition-colors">Home</a>
                 <a href="#about" class="hover:text-brandGold transition-colors">About Us</a>
+                <a href="#services" class="hover:text-brandGold transition-colors">Services</a>
                 <a href="#products" class="hover:text-brandGold transition-colors">Products</a>
-                <a href="#affiliations" class="hover:text-brandGold transition-colors">Affiliations</a>
-                <a href="#contact" class="hover:text-brandGold transition-colors">Contact Us</a>
+                <a href="#contact" class="hover:text-brandGold transition-colors">Contact</a>
             </nav>
 
-            <div class="hidden lg:block text-right">
-                <p class="text-xs text-gray-400 font-medium">Global Sourcing Desk</p>
-                <a href="tel:+917777007249" class="text-sm font-bold text-brandDark hover:text-brandGold">+91 77770 07249</a>
+            <div class="hidden lg:block text-right border-l pl-6 border-gray-800">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest font-medium">Global Sourcing Desk</p>
+                <a href="tel:+917566075002" class="text-xs font-bold text-brandGold hover:text-white tracking-wider">+91 75660 75002</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="hero" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-brandDark text-white py-24 lg:py-36">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="lg:w-2/3 space-y-6">
-                    <span class="inline-block bg-brandGold text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-sm">
-                        Product Authenticity, Guaranteed!
-                    </span>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
-                        Delivering Across <br><span class="text-brandGold">The Globe.</span>
-                    </h1>
-                    <p class="text-lg text-gray-300 max-w-xl">
-                        Sourcing specialty products across diverse domains, verified through our rigorous 3-Step Quality Check architecture.
-                    </p>
-                    <div class="pt-4">
-                        <a href="#products" class="bg-brandGold text-white px-8 py-3.5 rounded font-bold hover:bg-amber-700 transition-all text-sm uppercase tracking-wider">Explore Catalog</a>
-                    </div>
+    <main class="flex-grow">
+        <section id="hero" class="relative bg-cover bg-center py-32 lg:py-44 overflow-hidden" style="background-image: linear-gradient(rgba(11, 19, 43, 0.85), rgba(28, 37, 65, 0.9)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80');">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white text-center">
+                <span class="inline-block border border-brandGold/40 text-brandGold text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1 rounded-sm bg-brandGold/5 mb-4 backdrop-blur-sm">
+                    Connecting Indian Excellence to Global Markets
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none uppercase">
+                    Merchant Export <br><span class="text-brandGold gold-glow">Redefined.</span>
+                </h1>
+                <p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto mt-6 font-normal leading-relaxed">
+                    MADHAVRAJ GLOBAL VENTURES is a dynamic merchant export company committed to connecting high-quality minerals, industrial inputs, and premium spices from India with competitive global destinations.
+                </p>
+                <div class="pt-8 flex flex-wrap justify-center gap-4">
+                    <a href="#products" class="bg-brandGold text-brandDark px-8 py-3.5 text-xs font-black uppercase tracking-widest hover:bg-brandGoldHover transition-all shadow-lg shadow-brandGold/10 rounded">
+                        View Sourcing Catalogs
+                    </a>
+                    <a href="#about" class="border border-gray-600 hover:border-brandGold text-gray-300 hover:text-white px-8 py-3.5 text-xs font-bold uppercase tracking-widest transition-all rounded">
+                        Corporate Overview
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="py-20 bg-white">
+        <section id="about" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <div class="lg:col-span-7 space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-6 space-y-6">
                         <div class="flex items-center space-x-2">
-                            <div class="w-12 h-0.5 bg-brandGold"></div>
-                            <span class="text-xs uppercase tracking-widest font-bold text-brandGold">Reliable Merchant Exporter</span>
+                            <div class="w-8 h-0.5 bg-brandGold"></div>
+                            <span class="text-[11px] uppercase tracking-[0.2em] font-bold text-brandGold">Company Overview</span>
                         </div>
-                        <h2 class="text-3xl lg:text-4xl font-black text-brandDark tracking-tight">
-                            Backed by a 3rd Generation Business House
+                        <h2 class="text-3xl lg:text-4xl font-black text-brandDark tracking-tight uppercase">
+                            A Trusted Bridge Between Manufacturers & Global Buyers
                         </h2>
-                        <p class="text-gray-600 leading-relaxed">
-                            WhiteOx Sourcing stands as an established merchant exporting entity in India. We emphasize that business consistency scales symmetrically with mutual conviction, rigid timeline adherence, and process visibility...
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            We act as a highly reliable operational gateway, ensuring flawless procurement, strict quality assurance alignment, advanced export documentation management, international logistics routing, and precise delivery parameter adherence. Our robust network of vetted mine owners, advanced processing facilities, and agricultural aggregators enables us to craft end-to-end export configurations customized precisely to your regional compliance mandates.
                         </p>
                         <div class="pt-2">
-                            <a href="details.html?section=about" class="inline-flex items-center space-x-2 text-sm font-bold text-brandGold hover:text-amber-700 transition-colors uppercase tracking-wider">
-                                <span>Read More About Us</span>
-                                <i class="fa-solid fa-arrow-right-long"></i>
+                            <a href="details.html?section=history" class="inline-flex items-center space-x-2 text-xs font-bold text-brandDark hover:text-brandGold transition-colors uppercase tracking-widest bg-gray-100 px-4 py-2 rounded">
+                                <span>Read Corporate History & Vision</span> <i class="fa-solid fa-arrow-right-long ml-1"></i>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="lg:col-span-5 bg-brandLightBg p-8 rounded-xl border border-gray-100">
-                        <h3 class="text-lg font-bold text-brandDark uppercase tracking-wider mb-4">Core Philosophy</h3>
-                        <p class="text-gray-600 text-sm mb-4">Our ideology is "Nothing, but the Best" and this strategy is percolated deep across our procurement lines.</p>
-                        <a href="details.html?section=philosophy" class="text-xs font-bold text-brandGold uppercase hover:underline">View Philosophy Details →</a>
+                    <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                         <div class="p-6 border border-gray-100 bg-brandLightBg rounded-lg shadow-sm hover:shadow-md transition">
+                            <!-- <i class="fa-solid fa-shield-check text-2xl text-brandGold mb-4"></i> -->
+                            <i class="fa-solid fa-clipboard-check text-2xl text-brandGold mb-4"></i>
+                            <h4 class="font-bold text-brandDark uppercase tracking-wider mb-2">Quality Control</h4>
+                            <p class="text-xs text-gray-500">Rigorous independent batch checks to prevent contaminated or out-of-spec shipping logs.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100 bg-brandLightBg rounded-lg shadow-sm hover:shadow-md transition">
+                            <i class="fa-solid fa-ship text-2xl text-brandGold mb-4"></i>
+                            <h4 class="font-bold text-brandDark uppercase tracking-wider mb-2">Logistics Mastery</h4>
+                            <p class="text-xs text-gray-500">Comprehensive bulk container transport models ensuring optimal protective load buffering.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100 bg-brandLightBg rounded-lg shadow-sm hover:shadow-md transition sm:col-span-2">
+                            <i class="fa-solid fa-file-signature text-2xl text-brandGold mb-4"></i>
+                            <h4 class="font-bold text-brandDark uppercase tracking-wider mb-2">Documentation</h4>
+                            <p class="text-xs text-gray-500">Flawless management of bills of lading, phytosanitary clearances, and customs operations for flawless target entry.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="products" class="py-20 bg-brandLightBg border-t border-b border-gray-100">
+        <section id="services" class="py-24 bg-brandLightBg border-t border-b border-gray-200/60">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                    <div>
-                        <span class="text-xs uppercase tracking-widest font-bold text-brandGold block mb-2">Global Commodity Portfolio</span>
-                        <h2 class="text-3xl lg:text-4xl font-black text-brandDark tracking-tight">Our Core Sourcing Domains</h2>
-                    </div>
-                    <a href="details.html?section=products" class="mt-4 md:mt-0 inline-flex items-center space-x-2 bg-brandDark text-white px-5 py-2.5 rounded text-xs uppercase font-bold tracking-wider hover:bg-brandGold transition-colors shadow">
-                        <span>View Extended Catalog Specification</span>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200/60 p-6">
-                        <h3 class="text-lg font-bold text-brandDark mb-2">Marble & Granite</h3>
-                        <p class="text-xs text-gray-500 mb-4">High-grade structural slabs, natural flooring materials with strict dimension tolerance specifications.</p>
-                        <a href="details.html?section=products&item=marble" class="text-xs font-bold text-brandGold uppercase tracking-wider hover:underline">Specifications →</a>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200/60 p-6">
-                        <h3 class="text-lg font-bold text-brandDark mb-2">Tiles & Sanitaryware</h3>
-                        <p class="text-xs text-gray-500 mb-4">Premium vitrified surfaces and structural porcelain fittings optimized for real-estate batches.</p>
-                        <a href="details.html?section=products&item=tiles" class="text-xs font-bold text-brandGold uppercase tracking-wider hover:underline">Specifications →</a>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200/60 p-6">
-                        <h3 class="text-lg font-bold text-brandDark mb-2">Spices</h3>
-                        <p class="text-xs text-gray-500 mb-4">Pure geographic-origin whole crops, powdered items, meeting rigorous phytosanitary criteria.</p>
-                        <a href="details.html?section=products&item=spices" class="text-xs font-bold text-brandGold uppercase tracking-wider hover:underline">Specifications →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="affiliations" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-                <p class="text-xs uppercase tracking-widest font-bold text-brandGold">Trade Boards & Certifications Compliance</p>
                 
-                <div class="flex flex-wrap items-center justify-center gap-12 py-6 opacity-75">
-                    <div class="flex items-center space-x-2 text-gray-600 font-bold tracking-tight text-base">
-                        <i class="fa-solid fa-shield-halved text-xl text-brandDark"></i> <span>APEDA VETTED</span>
-                    </div>
-                    <div class="flex items-center space-x-2 text-gray-600 font-bold tracking-tight text-base">
-                        <i class="fa-solid fa-building-columns text-xl text-brandDark"></i> <span>DGFT COMPLIANT</span>
-                    </div>
-                    <div class="flex items-center space-x-2 text-gray-600 font-bold tracking-tight text-base">
-                        <i class="fa-solid fa-earth-americas text-xl text-brandDark"></i> <span>FIEO MEMBER</span>
-                    </div>
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-[11px] uppercase tracking-[0.2em] font-bold text-brandGold">End-to-End Capabilities</span>
+                    <h2 class="text-3xl font-black text-brandDark tracking-tight uppercase">Core Merchant Operations</h2>
+                    <div class="w-12 h-1 bg-brandGold mx-auto"></div>
                 </div>
 
-                <div class="pt-4">
-                    <a href="details.html?section=affiliations" class="inline-flex items-center space-x-2 text-xs font-bold text-brandDark hover:text-brandGold uppercase tracking-widest border-b-2 border-brandDark pb-1 transition-all">
-                        <span>View Regulatory Certifications & Verification Profile</span>
-                        <i class="fa-solid fa-chevron-right text-xs"></i>
-                    </a>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm space-y-3">
+                        <div class="text-brandGold text-xl"><i class="fa-solid fa-boxes-packing"></i></div>
+                        <h3 class="text-base font-bold text-brandDark uppercase tracking-wider">Merchant Export Services</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed">Sourcing items from vetted Indian manufacturers while guaranteeing strict compliance mapping.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm space-y-3">
+                        <div class="text-brandGold text-xl"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3 class="text-base font-bold text-brandDark uppercase tracking-wider">Product Procurement</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed">Identifying key industry suppliers to process configurations according to precise buyer definitions.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm space-y-3">
+                        <div class="text-brandGold text-xl">
+                            <!-- <i class="fa-solid fa-shield-check"></i> -->
+                            <i class="fa-solid fa-clipboard-check text-2xl text-brandGold"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-brandDark uppercase tracking-wider">Quality Assurance</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed">Enforcing strict material grading tests to maintain complete inventory batch uniformity.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-20 bg-brandDark text-white">
+        <section id="products" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-6">
+                
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16">
+                    <div class="space-y-2">
+                        <span class="text-[11px] uppercase tracking-[0.2em] font-bold text-brandGold block">Export Logistics Classes</span>
+                        <h2 class="text-3xl lg:text-4xl font-black text-brandDark tracking-tight uppercase">Primary Sourcing Portfolios</h2>
+                    </div>
+                    <p class="text-xs text-gray-500 max-w-sm mt-4 lg:mt-0">Sourced directly from certified manufacturers, mines, processing facilities, and premier agricultural regions across India.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="product-grid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-brandDark text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    
+                    <div class="lg:col-span-5 space-y-6">
                         <div class="flex items-center space-x-2">
-                            <div class="w-12 h-0.5 bg-brandGold"></div>
-                            <span class="text-xs uppercase tracking-widest font-bold text-brandGold">Get In Touch</span>
+                            <div class="w-8 h-0.5 bg-brandGold"></div>
+                            <span class="text-[11px] uppercase tracking-[0.2em] font-bold text-brandGold">Commercial Desk</span>
                         </div>
-                        <h2 class="text-3xl font-black tracking-tight">Ready to scale your supply line?</h2>
-                        <p class="text-gray-400 text-sm leading-relaxed max-w-md">
-                            Connect directly with our logistics team regarding spot pricing, standard minimal container volumes, consolidation logistics, or verification profiles.
+                        <h2 class="text-3xl font-black tracking-tight uppercase">Initiate Sourcing</h2>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Submit your required volume data or targeting grading parameters. Our trade desk officers respond with formal pricing profiles within 24 business hours.
                         </p>
-                        
-                        <div class="pt-2">
-                            <a href="details.html?section=contact" class="inline-flex items-center space-x-2 text-xs font-bold text-brandGold hover:text-amber-500 uppercase tracking-widest">
-                                <span>View Head Office Phone & Mail Extensions</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
-                            </a>
+
+                        <div class="space-y-4 pt-4 text-xs">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-brandGold mt-0.5"><i class="fa-solid fa-map-pin"></i></div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    <strong class="text-white block mb-1">HQ Operations Desk</strong>
+                                    Madhavraj Global Ventures, 29 Shivaji Park Colony Dewas Road Ujjain,  India.
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="text-brandGold mt-0.5"><i class="fa-solid fa-paper-plane"></i></div>
+                                <p class="text-gray-400">
+                                    <strong class="text-white block mb-1">Electronic Mail Routing</strong>
+                                    info@madhavrajglobalventures.com
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800/40 border border-gray-700/60 p-6 rounded-lg space-y-4">
-                        <h3 class="font-bold text-sm uppercase tracking-wider text-gray-300">Quick Sourcing Inquiry</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <input class="w-full bg-gray-900 border border-gray-700 rounded p-3 text-xs text-white" placeholder="Name" type="text" disabled>
-                            <input class="w-full bg-gray-900 border border-gray-700 rounded p-3 text-xs text-white" placeholder="Email" type="email" disabled>
+                    <div class="lg:col-span-7 bg-white/5 border border-white/10 p-8 rounded-xl backdrop-blur-sm">
+                        <form id="contactForm" class="space-y-4" onsubmit="submitContact(event)">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Company / Name</label>
+                                    <input id="clientName" class="w-full bg-gray-950 border border-gray-800 rounded p-3 text-xs text-white focus:outline-none focus:border-brandGold" type="text" required>
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Email Address</label>
+                                    <input id="clientEmail" class="w-full bg-gray-950 border border-gray-800 rounded p-3 text-xs text-white focus:outline-none focus:border-brandGold" type="email" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Target Commodity Allocation Class</label>
+                                <select id="clientCategory" class="w-full bg-gray-950 border border-gray-800 rounded p-3 text-xs text-white focus:outline-none focus:border-brandGold" required>
+                                    <option value="" disabled selected>Select a Product Category</option>
+                                    <option>Indian Minerals</option>
+                                    <option>Pharmaceuticals</option>
+                                    <option>Engineering Goods</option>
+                                    <option>Agro Products</option>
+                                    <option>Tiles & Sanitaryware</option>
+                                    <option>Marble & Granite</option>
+                                    <option>Bamboo Products</option>
+                                    <option>Indian Spices</option>
+                                    <option>Other / Custom Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Sourcing Dimensions & Details</label>
+                                <textarea id="clientDetails" class="w-full bg-gray-950 border border-gray-800 rounded p-3 text-xs text-white focus:outline-none focus:border-brandGold h-24" placeholder="Please specify quantities, grades, and destination port..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brandGold text-brandDark font-black py-3.5 text-xs uppercase tracking-widest hover:bg-brandGoldHover transition-all rounded">
+                                Connect with Trade Desk
+                            </button>
+                        </form>
+                        <!-- Success Message -->
+                        <div id="contactSuccess" class="hidden text-center py-8">
+                            <i class="fa-solid fa-circle-check text-4xl text-green-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Inquiry Registered</h3>
+                            <p class="text-sm text-gray-400">Our trade desk has received your specifications. A representative will contact you shortly.</p>
+                            <button onclick="document.getElementById('contactForm').reset(); document.getElementById('contactForm').classList.remove('hidden'); document.getElementById('contactSuccess').classList.add('hidden');" class="mt-6 text-xs text-brandGold uppercase font-bold hover:underline">Submit Another Inquiry</button>
                         </div>
-                        <button onclick="window.location.href='details.html?section=contact'" class="w-full bg-brandGold text-white font-bold p-3 rounded text-xs uppercase tracking-widest">
-                            Open Communications Desk
-                        </button>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-950 text-gray-500 text-xs py-8 text-center">
-        <p>&copy; 2026 WhiteOx Sourcing LLP. All rights reserved globally.</p>
+    <footer class="bg-gray-950 text-gray-500 text-[11px] py-12 border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-gray-900 pb-6">
+                <p>&copy; 2026 MADHAVRAJ GLOBAL VENTURES. Sourcing Parameters Maintained Internationally.</p>
+                <div class="flex space-x-6">
+                    <a href="details.html?section=history" class="hover:text-white transition-colors">Corporate Profile</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Global Desk</a>
+                </div>
+            </div>
+            <!-- <div class="text-right tracking-normal opacity-40 text-[10px]">
+                developed by rahul
+            </div> -->
+            <div class=" border-t border-gray-900  text-center !mt-0">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest">
+                    ENGINEERED & MAINTAINED BY 
+                    <a href="https://nexusailab.com" class="text-brandGold hover:text-white transition-colors ml-1 font-bold opacity-60">
+                        RAHUL | NexusAiLab
+                    </a>
+                </p>
+            </div>
+            
+        </div>
     </footer>
+
+    <script>
+        // Data for generating the grid dynamically
+        const indexProductData = {
+            minerals: {
+                title: "Indian Minerals",
+                desc: "High-purity industrial minerals serving diverse industries like construction, agriculture, ceramics, and pharmaceuticals globally.",
+                img: "IndianMinerals.png"
+            },
+            pharmaceuticals: {
+                title: "Pharmaceuticals",
+                desc: "High-quality, affordable, and internationally compliant medicines manufactured under stringent WHO-GMP and US FDA standards.",
+                img: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80"
+            },
+            engineering: {
+                title: "Engineering Goods",
+                desc: "High-quality products meeting international standards for performance across construction, automotive, agriculture, and energy sectors.",
+                img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80"
+            },
+            agro: {
+                title: "Agro Products",
+                desc: "Premium-quality grains, spices, pulses, fresh fruits, vegetables, and plantation crops sourced from modern farming practices.",
+                img: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80"
+            },
+            tiles: {
+                title: "Tiles & Sanitaryware",
+                desc: "Innovative designs, exceptional durability, and cost-effectiveness for residential, commercial, and infrastructure projects globally.",
+                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+            },
+            marble: {
+                title: "Marble & Granite",
+                desc: "Premium-quality natural stones renowned for exceptional durability, natural beauty, distinct patterns, and superior finishing.",
+                img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
+            },
+            bamboo: {
+                title: "Bamboo Products",
+                desc: "Eco-friendly, renewable, and sustainable bamboo products serving as a preferred alternative to traditional wood and synthetics.",
+                img: "BambooProducts.png"
+            },
+            spices: {
+                title: "Premium Spices",
+                desc: "Valued across continents for high volatile oil volumes, immaculate handling hygiene, natural aroma, and rich flavor compositions.",
+                img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80"
+            }
+        };
+
+        function initProductGrid() {
+            const gridContainer = document.getElementById('product-grid');
+            let gridHTML = '';
+
+            for (const [key, category] of Object.entries(indexProductData)) {
+                // Fallback image URL using Placehold.co if Unsplash link fails
+                const fallbackImg = `https://placehold.co/600x400/1C2541/D4AF37?text=${encodeURIComponent(category.title)}`;
+                
+                gridHTML += `
+                    <div class="border border-gray-200 rounded-xl overflow-hidden bg-brandLightBg flex flex-col group hover:shadow-lg transition-all duration-300">
+                        <div class="h-48 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-brandDark/20 group-hover:bg-transparent transition duration-300 z-10"></div>
+                            <img src="${category.img}" alt="${category.title}" onerror="this.onerror=null;this.src='${fallbackImg}';" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-lg font-black text-brandDark uppercase tracking-wider mb-2">${category.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed mb-6 flex-grow line-clamp-3">
+                                ${category.desc}
+                            </p>
+                            <a href="details.html?section=${key}" class="inline-flex items-center space-x-2 text-xs font-bold text-brandGold hover:text-brandDark transition-colors mt-auto tracking-wider uppercase">
+                                <span>View Specifications</span> <i class="fa-solid fa-arrow-right-long transform group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }
+            gridContainer.innerHTML = gridHTML;
+        }
+
+        function submitContact1(event) {
+            console.log("Success message old .");
+            event.preventDefault();
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('contactSuccess').classList.remove('hidden');
+        }
+
+        function submitContact11(event) {
+            console.log("Success message new .");
+    event.preventDefault();
+
+    // 1. Extract values from the form
+    const name = document.getElementById('clientName').value;
+    const email = document.getElementById('clientEmail').value;
+    const category = document.getElementById('clientCategory').value;
+    const details = document.getElementById('clientDetails').value;
+    const formData = {
+        name: document.getElementById("clientName").value,
+        email: document.getElementById("clientEmail").value,
+        category: document.getElementById("clientCategory").value,
+        subject: 'Inquire Request',
+        message: document.getElementById("clientDetails").value,
+        date: new Date().toLocaleString("en-IN")
+    };
+
+    console.log("formData . " + JSON.stringify(formData));
+    //saveAsTextFile(formData);
+
+    // 2. Format the email content
+    const targetEmail = "info@madhavrajglobalventures.com, Madhavrajglobalventures@gmail.com";
+    const subject = encodeURIComponent(`Trade Desk Inquiry: ${category} - ${name}`);
+    const body = encodeURIComponent(
+        `Company / Name: ${name}\n` +
+        `Contact Email: ${email}\n` +
+        `Commodity Class: ${category}\n\n` +
+        `Sourcing Details:\n${details}`
+    );
+
+    // 3. Trigger the default email client
+    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+
+    // 4. Show success message on the website
+    document.getElementById('contactForm').classList.add('hidden');
+    document.getElementById('contactSuccess').classList.remove('hidden');
+    console.log("Success message displayed and email client triggered. " + body);
+}
+        
+
+function submitContact(event) {
+    event.preventDefault();
+    
+    // Change button text to show it's working
+    const submitBtn = document.querySelector('#contactForm button[type="submit"]');
+    const originalText = submitBtn.innerText;
+    submitBtn.innerText = "SENDING...";
+    submitBtn.disabled = true;
+    
+    const formData = {
+        name: document.getElementById("clientName").value,
+        email: document.getElementById("clientEmail").value,
+        category: document.getElementById("clientCategory").value,
+        subject: 'Inquire Request',
+        message: document.getElementById("clientDetails").value,
+        date: new Date().toLocaleString("en-IN")
+    };
+
+    console.log("formData . " + JSON.stringify(formData));
+    saveAsTextFile(formData);
+    
+    console.log('Sending !');
+    // Send the form using EmailJS
+    // You will generate the SERVICE_ID and TEMPLATE_ID in your EmailJS dashboard
+    emailjs.send('MRGVG', 'template_9aj59dt',  {
+                    name: document.getElementById("clientName").value,
+                    email: document.getElementById("clientEmail").value,
+                    category: document.getElementById("clientCategory").value,
+                    message: document.getElementById("clientDetails").value,
+                    time: new Date()
+                })
+        .then(function() {
+            console.log('SUCCESS!');
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('contactSuccess').classList.remove('hidden');
+            submitBtn.innerText = "Connect with Trade Desk";
+            submitBtn.disabled = false;
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert("There was an error sending your message. Please try again.");
+            submitBtn.innerText = originalText;
+            submitBtn.disabled = false;
+        });
+}
+
+function saveAsTextFile(data) {
+console.log("saveAsTextFile  data . " + JSON.stringify(data));
+    const content = `Inquiry Request
+================================
+
+Date      : ${data.date}
+
+Name      : ${data.name}
+
+Email     : ${data.email}
+
+Subject   : ${data.subject}
+
+Message
+--------------------------------
+
+${data.message}
+
+================================`;
+
+    const blob = new Blob([content], { type: "text/plain" });
+
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+
+    const now = new Date();
+
+    const fileName =
+        `Inquiry_${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_` +
+        `${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}${String(now.getSeconds()).padStart(2, '0')}.txt`;
+
+    // Suggested folder (works only in some browsers)
+    link.download = `Inquiry/${fileName}`;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(link.href);
+    console.log("saveAsTextFile  Complete . ");
+}
+window.addEventListener('DOMContentLoaded', initProductGrid);
+    </script>
 </body>
 </html>
