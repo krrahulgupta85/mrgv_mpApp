@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RZBPXHWES"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7RZBPXHWES');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -82,13 +91,14 @@
 
             <div class="hidden lg:block text-right border-l pl-6 border-gray-800">
                 <p class="text-[10px] text-gray-400 uppercase tracking-widest font-medium">Global Sourcing Desk</p>
-                <a href="tel:+917566075002" class="text-xs font-bold text-brandGold hover:text-white tracking-wider">+91 75660 75002</a>
+                <a href="#" class="text-xs font-bold text-brandGold hover:text-white tracking-wider">+91 75660 75002</a>
             </div>
         </div>
     </header>
 
     <main class="flex-grow">
-        <section id="hero" class="relative bg-cover bg-center py-32 lg:py-44 overflow-hidden" style="background-image: linear-gradient(rgba(11, 19, 43, 0.85), rgba(28, 37, 65, 0.9)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80');">
+        <!-- //https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80 -->
+        <section id="hero" class="relative bg-cover bg-center py-32 lg:py-44 overflow-hidden" style="background-image: linear-gradient(rgba(11, 19, 43, 0.85), rgba(28, 37, 65, 0.9)), url('background.avif');">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white text-center">
                 <span class="inline-block border border-brandGold/40 text-brandGold text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1 rounded-sm bg-brandGold/5 mb-4 backdrop-blur-sm">
                     Connecting Indian Excellence to Global Markets
@@ -220,14 +230,53 @@
                                 <div class="text-brandGold mt-0.5"><i class="fa-solid fa-map-pin"></i></div>
                                 <p class="text-gray-400 leading-relaxed">
                                     <strong class="text-white block mb-1">HQ Operations Desk</strong>
-                                    Madhavraj Global Ventures, 29 Shivaji Park Colony Dewas Road Ujjain,  India.
+                                    Madhavraj Global Ventures, 29 Shivaji Park Colony, </br>
+                                    Dewas Road Ujjain, India
                                 </p>
                             </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="text-brandGold mt-0.5"><i class="fa-solid fa-location-dot"></i></div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    <strong class="text-white block mb-1">Branch</strong>
+                                    Madhavraj Global Ventures, 164 First Floor, C-21 Mall,  </br>
+                                    Nanakheda Ujjain, India
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="text-brandGold mt-0.5"><i class="fa-solid fa-solid fa-phone"></i></div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    <strong class="text-white block mb-1">+91 75660 75002</strong>
+                                </p>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="text-brandGold mt-0.5"><i class="fa-solid fa-solid fa-mobile-screen-button"></i></div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    <strong class="text-white block mb-1">+91 92325 75002</strong>
+                                </p>
+                            </div>
+                            <!-- <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-slate-400">
+
+                                <div class="flex flex-col items-center sm:items-start gap-1">
+                                    <span class="font-semibold text-slate-300">HQ Operations Desk (Whitefield):</span>
+                                    <span>Cyber Park, Whitefield, Bengaluru, Karnataka</span>
+                                    <span><span class="font-semibold text-slate-300">Phone:</span> +91 80 5555 0199</span>
+                                </div>
+
+                                <div class="hidden sm:block w-px h-12 bg-slate-800 mt-1"></div>
+
+                                <div class="flex flex-col items-center sm:items-start gap-1">
+                                    <span class="font-semibold text-slate-300">HQ Operations Desk (Electronic City):</span>
+                                    <span>Phase 1, Electronic City, Bengaluru, Karnataka</span>
+                                    <span><span class="font-semibold text-slate-300">Phone:</span> +91 80 5555 0299</span>
+                                </div>
+
+                            </div> -->
                             <div class="flex items-start space-x-4">
                                 <div class="text-brandGold mt-0.5"><i class="fa-solid fa-paper-plane"></i></div>
                                 <p class="text-gray-400">
                                     <strong class="text-white block mb-1">Electronic Mail Routing</strong>
-                                    info@madhavrajglobalventures.com
+                                    Info@MadhavRajGlobalVentures.Com </br>
+                                    MadhavRajGlobalVentures@Gmail.Com
                                 </p>
                             </div>
                         </div>
@@ -282,9 +331,9 @@
         </section>
     </main>
 
-    <footer class="bg-gray-950 text-gray-500 text-[11px] py-12 border-t border-gray-900 mt-auto">
+    <footer class="bg-gray-950 text-gray-500 text-[11px] py-6 border-t border-gray-900 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-gray-900 pb-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-gray-900 pb-3">
                 <p>&copy; 2026 MADHAVRAJ GLOBAL VENTURES. Sourcing Parameters Maintained Internationally.</p>
                 <div class="flex space-x-6">
                     <a href="details.html?section=history" class="hover:text-white transition-colors">Corporate Profile</a>
@@ -294,11 +343,11 @@
             <!-- <div class="text-right tracking-normal opacity-40 text-[10px]">
                 developed by rahul
             </div> -->
-            <div class=" border-t border-gray-900  text-center !mt-0">
+            <div class="pt-3 border-t border-gray-900  text-center !mt-0">
                 <p class="text-[10px] text-gray-500 uppercase tracking-widest">
                     ENGINEERED & MAINTAINED BY 
-                    <a href="https://nexusailab.com" class="text-brandGold hover:text-white transition-colors ml-1 font-bold opacity-60">
-                        RAHUL | NexusAiLab
+                    <a href="https://www.linkedin.com/in/rahulkumargupta1" target="_blank" rel="noopener noreferrer" class="text-brandGold hover:text-white transition-colors ml-1 font-bold opacity-60">
+                        RAHUL | NeonAiLab
                     </a>
                 </p>
             </div>
@@ -309,6 +358,49 @@
     <script>
         // Data for generating the grid dynamically
         const indexProductData = {
+            minerals: {
+                title: "Indian Minerals",
+                desc: "High-purity industrial minerals serving diverse industries like construction, agriculture, ceramics, and pharmaceuticals globally.",
+                img: "IndianMinerals.png"
+            },
+            pharmaceuticals: {
+                title: "Pharmaceuticals",
+                desc: "High-quality, affordable, and internationally compliant medicines manufactured under stringent WHO-GMP and US FDA standards.",
+                img: "Pharmaceuticals.png"
+            },
+            engineering: {
+                title: "Engineering Goods",
+                desc: "High-quality products meeting international standards for performance across construction, automotive, agriculture, and energy sectors.",
+                img: "EngineeringGoods.png"
+            },
+            agro: {
+                title: "Agro Products",
+                desc: "Premium-quality grains, spices, pulses, fresh fruits, vegetables, and plantation crops sourced from modern farming practices.",
+                img: "AgroProducts.png" 
+                
+            },
+            tiles: {
+                title: "Tiles & Sanitaryware",
+                desc: "Innovative designs, exceptional durability, and cost-effectiveness for residential, commercial, and infrastructure projects globally.",
+                img: "TilesSanitaryware.png" 
+            },
+            marble: {
+                title: "Marble & Granite",
+                desc: "Premium-quality natural stones renowned for exceptional durability, natural beauty, distinct patterns, and superior finishing.",
+                img: "MarbleGranite.png" 
+            },
+            bamboo: {
+                title: "Bamboo Products",
+                desc: "Eco-friendly, renewable, and sustainable bamboo products serving as a preferred alternative to traditional wood and synthetics.",
+                img: "BambooProducts.png"
+            },
+            spices: {
+                title: "Premium Spices",
+                desc: "Valued across continents for high volatile oil volumes, immaculate handling hygiene, natural aroma, and rich flavor compositions.",
+                img: "PremiumSpices.png" 
+            }
+        };
+        const indexProductData1 = {
             minerals: {
                 title: "Indian Minerals",
                 desc: "High-purity industrial minerals serving diverse industries like construction, agriculture, ceramics, and pharmaceuticals globally.",
@@ -447,7 +539,7 @@ function submitContact(event) {
     };
 
     console.log("formData . " + JSON.stringify(formData));
-    saveAsTextFile(formData);
+    
     
     console.log('Sending !');
     // Send the form using EmailJS
@@ -473,47 +565,6 @@ function submitContact(event) {
         });
 }
 
-function saveAsTextFile(data) {
-console.log("saveAsTextFile  data . " + JSON.stringify(data));
-    const content = `Inquiry Request
-================================
-
-Date      : ${data.date}
-
-Name      : ${data.name}
-
-Email     : ${data.email}
-
-Subject   : ${data.subject}
-
-Message
---------------------------------
-
-${data.message}
-
-================================`;
-
-    const blob = new Blob([content], { type: "text/plain" });
-
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-
-    const now = new Date();
-
-    const fileName =
-        `Inquiry_${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_` +
-        `${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}${String(now.getSeconds()).padStart(2, '0')}.txt`;
-
-    // Suggested folder (works only in some browsers)
-    link.download = `Inquiry/${fileName}`;
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    URL.revokeObjectURL(link.href);
-    console.log("saveAsTextFile  Complete . ");
-}
 window.addEventListener('DOMContentLoaded', initProductGrid);
     </script>
 </body>
